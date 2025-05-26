@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Producto | El Buen Café</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f4f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #6f4e37;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .producto-img {
+      flex: 1 1 300px;
+    }
+
+    .producto-img img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .producto-detalles {
+      flex: 1 1 300px;
+    }
+
+    .producto-detalles h2 {
+      margin-top: 0;
+    }
+
+    .precio {
+      font-size: 1.5rem;
+      color: #6f4e37;
+      margin: 1rem 0;
+    }
+
+    button {
+      background-color: #6f4e37;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #5a3f2b;
+    }
+
+    footer {
+      background-color: #6f4e37;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>El Buen Café</h1>
+  </header>
+
+  <main>
+    <div class="producto-img">
+      <img src="capuccino.jpg" alt="Capuccino">
+    </div>
+
+    <div class="producto-detalles">
+      <h2>Capuccino Clásico</h2>
+      <p>Disfruta de nuestro capuccino clásico, preparado con café 100% arábico, leche vaporizada y una suave capa de espuma. Perfecto para comenzar el día.</p>
+      <div class="precio">$3.00</div>
+      <button onclick="agregarAlCarrito()">Agregar al carrito</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 El Buen Café. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function agregarAlCarrito() {
+      alert('Producto agregado al carrito.');
+    }
+  </script>
+</body>
+</html>
